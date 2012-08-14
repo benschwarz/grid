@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Grid test</title>
+		<link rel="stylesheet" type="text/css" href="grid.min.css">
+
+		<style>
+			.grid { border: 1px solid #ffffcc; margin-bottom: 1em; }
+			[class *= column-] {
+				background-color: #ffccff;
+				border-radius: 5px;
+				padding: 2px 5px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="grid">
+			<div class="column-1">1</div>
+			<div class="column-1">1</div>
+			<div class="column-1">1</div>
+			<div class="column-1">1</div>
+			<div class="column-1">1</div>
+			<div class="column-1">1</div>
+			<div class="column-1">1</div>
+			<div class="column-1">1</div>
+			<div class="column-1">1</div>
+			<div class="column-1">1</div>
+			<div class="column-1">1</div>
+			<div class="column-1 column-last">1</div>
+		</div>
+
+		<div class="grid">
+			<div class="column-2">2</div>
+			<div class="column-2">2</div>
+			<div class="column-2">2</div>
+			<div class="column-2">2</div>
+			<div class="column-2">2</div>
+			<div class="column-2 column-last">2</div>
+		</div>
+
+		<div class="grid">
+			<div class="column-6">6</div>
+			<div class="column-6 column-last">6</div>
+		</div>
+
+		<div class="grid">
+			<div class="column-skip-4 column-8 column-last">8</div>
+		</div>
+
+		<div class="grid">
+			<div class="column-4">4</div>
+			<div class="column-skip-4 column-4 column-last">4</div>
+		</div>
+	</body>
+</html>
