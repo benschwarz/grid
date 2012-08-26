@@ -5,7 +5,7 @@ A super simple grid system that:
 * Doesn't use floats
 * Does use border-box
 * Doesn't work in IE before 8
-* Is tiny, simple, and therefore nice to use
+* Is tiny (2.1K), simple, and therefore nice to use
 
 Check the [demo](http://benschwarz.github.com/grid/index.html). Grab [grid.min.css](https://raw.github.com/benschwarz/grid/master/grid.min.css), or if you prefer — [grid.scss](https://raw.github.com/benschwarz/grid/master/grid.scss).
 
