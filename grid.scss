@@ -2,7 +2,6 @@ $grid-max-width:          1140px;
 $grid-max-columns:        12;
 $grid-column-width:       4.85%;
 $grid-gutter-width:       3.8%;
-$old-ie-support-required: false;
 
 @function column-width($count: 1) {
   @return ($count * ($grid-column-width + $grid-gutter-width) - $grid-gutter-width);
@@ -50,11 +49,6 @@ $old-ie-support-required: false;
 
     vertical-align: top;
     margin-right: $grid-gutter-width;
-
-    @if $old-ie-support-required {
-      *display: inline;
-      zoom: 1;
-    }
   }
 
   .column-skip-#{ $i } {
