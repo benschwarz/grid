@@ -34,6 +34,7 @@ $grid-gutter-width:       3.8%;
   
   letter-spacing: -4px;
   word-spacing: -4px;
+  text-rendering: optimizespeed;
 }
 
 /*
@@ -49,6 +50,7 @@ $grid-gutter-width:       3.8%;
 
     vertical-align: top;
     margin-right: $grid-gutter-width;
+    text-rendering: auto;
   }
 
   .before-column-skip-#{ $i } {
