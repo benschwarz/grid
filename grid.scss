@@ -73,6 +73,4 @@ $grid-gutter-width:       3.8%;
 /* 
   Last column item
 */
-.column-omega, .column-last {
-  margin-right: 0;
-}
+.column-omega, .column-last, .column:last-child { margin-right: 0; }
