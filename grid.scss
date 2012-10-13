@@ -51,8 +51,12 @@ $grid-gutter-width:       3.8%;
     margin-right: $grid-gutter-width;
   }
 
-  .column-skip-#{ $i } {
+  .before-column-skip-#{ $i } {
     margin-left: column-width( $i ) + $grid-gutter-width;
+  }
+
+  .after-column-skip-#{ $i } {
+    margin-right: column-width( $i ) + $grid-gutter-width;
   }
 }
 
