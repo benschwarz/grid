@@ -59,10 +59,10 @@ $grid-gutter-width:       3.8%;
 /*
   Ratio classes (syntactic sugar)
 */
-.column-full { @extend .column-#{ $grid-max-columns } }
-.column-half { @extend .column-#{ $grid-max-columns / 2 } }
-.column-third { @extend .column-#{ $grid-max-columns / 3 } }
-.column-quarter { @extend .column-#{ $grid-max-columns / 4 } }
+.column-full { @extend .column-#{ round( $grid-max-columns ) } }
+.column-half { @extend .column-#{ round( $grid-max-columns / 2 ) } }
+.column-third { @extend .column-#{ round( $grid-max-columns / 3 ) } }
+.column-quarter { @extend .column-#{ round( $grid-max-columns / 4 ) } }
 
 /* 
   Last column item
