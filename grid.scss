@@ -1,10 +1,11 @@
 $grid-max-width:          1140px;
 $grid-max-columns:        12;
-$grid-column-width:       4.85%;
 $grid-gutter-width:       3.8%;
 
 @function column-width($count: 1) {
-  @return ($count * ($grid-column-width + $grid-gutter-width) - $grid-gutter-width);
+  $width: $grid-max-width / $grid-max-columns;
+
+  @return ((percentage($width / $grid-max-width) * $count) - $grid-gutter-width);
 }
 
 @mixin column($count: 1) {
@@ -62,15 +63,7 @@ $grid-gutter-width:       3.8%;
   }
 }
 
-/*
-  Ratio classes (syntactic sugar)
-*/
-.column-full { @extend .column-#{ round( $grid-max-columns ) } }
-.column-half { @extend .column-#{ round( $grid-max-columns / 2 ) } }
-.column-third { @extend .column-#{ round( $grid-max-columns / 3 ) } }
-.column-quarter { @extend .column-#{ round( $grid-max-columns / 4 ) } }
-
 /* 
   Last column item
 */
-.column-omega, .column-last, .column:last-child { margin-right: 0; }
+.column-last, [class*="column-"]:last-of-type { margin-right: 0; }
