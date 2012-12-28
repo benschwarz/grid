@@ -2,15 +2,18 @@
 <html class="no-js">
 	<head>
 		<title>Grid test</title>
-		<link rel="stylesheet" type="text/css" href="grid.min.css">
+		<link rel="stylesheet" href="layout-webfont.css">
+		<link rel="stylesheet" href="grid.min.css">
 
 		<style>
-			.grid { margin-bottom: 1em; font-family: "Lucida Grande"; font-weight: bold; }
+			body { font-family: "Lucida Grande"; }
+			.grid { margin-bottom: 1em; font-weight: bold; }
 
-			[class *= column-] {
+			[class*='column-'] {
 				background-color: #ffccff;
 				border-radius: 5px;
 				padding: 2px 5px;
+				min-height: 100px;
 				text-align: center;
 			}
 		</style>

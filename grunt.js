@@ -1,13 +1,13 @@
 module.exports = function(grunt) {
   grunt.initConfig({
   	watch: {
-    		files: 'grid.scss',
+    		files: '_grid.scss',
       	tasks: 'shell'
     },
     
     shell: {
     	compilescss: {
-  			command: 'sass -t compressed grid.scss > grid.min.css'
+  			command: 'sass -t compressed _grid.scss > grid.min.css'
 			}
 		}
   });
